@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.constraint.ConstraintLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="205dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="36dp"
+            android:text="Resultado"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/number1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:hint="Dato"
+            android:inputType="numberSigned|numberDecimal"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv" />
+
+        <Button
+            android:id="@+id/btncalc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="seno"
+            android:text="Seno"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            app:backgroundTint="#FF9800"
+            app:layout_constraintEnd_toStartOf="@+id/restar"
+            app:layout_constraintHorizontal_bias="0.7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/number1" />
+
+        <Button
+            android:id="@+id/restar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="coceno"
+            android:text="Coceno"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btncalc" />
+
+        <Button
+            android:id="@+id/dividir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="212dp"
+            android:layout_marginEnd="200dp"
+            android:onClick="logaritmo"
+            android:text="Logaritmo natural"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restar" />
+
+        <Button
+            android:id="@+id/multiplicar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="raiz"
+            android:text="Raíz cuadrada"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/dividir"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dividir" />
+
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
